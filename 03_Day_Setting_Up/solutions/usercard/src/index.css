@@ -1,0 +1,85 @@
+:root {
+  --grey: #EBD3F8;
+  --light-main: #AD49E1;
+  --main: hsl(279, 72%, 39%);
+  --dark-main: #2E073F;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--grey);
+}
+
+.card-container {
+  border-radius: 15px;
+  width: 70%;
+  background-color: var(--light-main);
+  padding: 1em;
+}
+
+.card {
+  background-color: whitesmoke;
+  border-radius: 10px;
+  padding: 1em;
+}
+
+.card-img {
+  width: 20%;
+}
+
+.card-author {
+  letter-spacing: 2px;
+  display: inline;
+  font-weight: bolder;
+}
+
+.card-icon-verified {
+  margin-bottom: -6px;
+}
+
+.card-job {
+  color: var(--light-main);
+}
+
+.card-skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.card-skills-container > * {
+  text-align: center;
+  display: inline;
+  color: var(--grey);
+  background-color: var(--main);
+  border-radius: 5px;
+  padding: 5px;
+  margin: 3px 3px 0px 0px;
+  flex: 1;
+}
+
+.card-time {
+  color: grey;
+}
